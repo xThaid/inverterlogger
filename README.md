@@ -1,0 +1,1 @@
+# inverter-logger-proto
