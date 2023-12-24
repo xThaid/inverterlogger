@@ -77,7 +77,7 @@ func main() {
 	}
 
 	power := int(registers[0x50]) / 10
-	totalEnergy := int(registers[0x50]) * 100
+	totalEnergy := (int(registers[0x3f]) + (int(registers[0x40]) << 16)) * 100
 
 	fmt.Printf("Current power: %d, total energy: %d\n", power, totalEnergy)
 }
